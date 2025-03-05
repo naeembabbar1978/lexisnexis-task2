@@ -1,0 +1,47 @@
+# SeleniumTestProject1
+
+## Overview
+This project demonstrates a testing framework that supports Behavior Driven Development (BDD) for automation testing of web applications using Java, Selenium, Cucumber, and Serenity BDD.
+
+## Project Structure
+- src/main/java/pageobjects: Contains Page Object Model classes.
+- HomePage.java:             Represents the home page and includes methods to interact with it.
+- CareersPage.java:          Represents the careers page and includes methods to interact with it.
+- JobSearchPage.java:        Represents the job search page and includes methods to interact with it.
+- src/test/java/steps:       Contains step definition classes.
+- JobSearchSteps.java:       Defines the steps corresponding to the scenarios in the feature file.
+- src/test/java/tests:       Contains test classes.
+- JobSearchTest.java:        Contains test methods for job search functionality.
+- src/test/java/utils:       Contains utility classes.
+- ConfigLoader.java:         Loads configuration properties.
+- Logger.java:               Provides logging functionality.
+- PopupHandler.java:         Handles popup windows.
+- BrowserUtils.java:         Provides browser-related utilities.
+- WaitUtils.java:            Provides wait-related utilities.
+- ScreenshotUtils.java:      Provides screenshot-related utilities.
+- src/test/resources/features: Contains Cucumber feature files.
+- job_search.feature:          Defines the job search scenarios in Gherkin syntax.
+- src/test/resources:           Contains configuration files.
+- config.properties:            Stores configuration settings.
+
+## Technologies
+- Java
+- Selenium
+- Cucumber
+- TestNG
+- Serenity BDD
+
+## Setup
+1. Clone the repository.
+2. Install dependencies using Maven.
+3. Update the path to chromedriver in JobSearchTest.java.
+4. Run the tests using TestNG.
+
+## Running Tests
+To run the tests, use the following command:
+```bash
+mvn test
+mvn clean verify
+
+## Reporting
+   Test results are handled by Serenity BDD and can be found in the target/site/serenity directory.
