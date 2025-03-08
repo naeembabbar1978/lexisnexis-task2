@@ -34,14 +34,13 @@ This project demonstrates a testing framework that supports Behavior Driven Deve
 ## Setup
 1. Clone the repository.
 2. Install dependencies using Maven.
-3. Update the path to chromedriver in JobSearchTest.java.
+3. Update the path to chromedriver in config file
 4. Run the tests using TestNG.
 
 ## Running Tests
 To run the tests, use the following command:
 ```bash
-mvn test
-mvn clean verify
+mvn test / mvn clean verify / or right clock test runner and run scenario
 
 ## Reporting
    Test results are handled by Serenity BDD and can be found in the target/site/serenity directory.
